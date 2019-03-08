@@ -7,8 +7,6 @@
     <application android:name=".service.impl.AppServiceImpl"
     	android:icon="@drawable/icon"
         android:label="@string/app_name">
-        <meta-data android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
         <activity android:name=".BrEfDicActivity"
                   android:label="@string/app_name"
                   android:windowSoftInputMode="stateHidden">
@@ -57,10 +55,7 @@
 		<activity android:name=".preferences.AppPreferenceActivity"
 				android:label="@string/app_name">
 		</activity>
-        <!-- Activity required to show ad overlays. -->
-        <activity android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
-		
+
 		<receiver android:name=".widget.WordWidgetProvider" android:label="@string/app_name">
     		<intent-filter>
         		<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />

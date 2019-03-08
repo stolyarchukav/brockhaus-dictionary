@@ -14,7 +14,6 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.forzaverita.brefdic.advert.AdUtils;
 import org.forzaverita.brefdic.data.Constants;
 import org.forzaverita.brefdic.menu.MenuUtils;
 import org.forzaverita.brefdic.service.AppService;
@@ -51,7 +50,6 @@ public class WordActivity extends Activity {
         setContentView(R.layout.word);
         service = (AppService) getApplicationContext();
         configureActivity();
-        AdUtils.loadAd(this);
     }
 
 	private void configureActivity() {

@@ -1,0 +1,6 @@
+rootProject.name = 'brefdic'
+
+include ':brefdic-core'
+include ':brefdic-server'
+include ':brefdic-import'
+include ':brefdic-android'

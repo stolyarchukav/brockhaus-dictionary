@@ -1,15 +1,16 @@
 package org.forzaverita.brefdic.menu;
 
-import org.forzaverita.brefdic.R;
-import org.forzaverita.brefdic.history.BookmarksActivity;
-import org.forzaverita.brefdic.history.HistoryActivity;
-import org.forzaverita.brefdic.preferences.AppPreferenceActivity;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import org.forzaverita.brefdic.BrEfDicActivity;
+import org.forzaverita.brefdic.R;
+import org.forzaverita.brefdic.history.BookmarksActivity;
+import org.forzaverita.brefdic.history.HistoryActivity;
+import org.forzaverita.brefdic.preferences.AppPreferenceActivity;
 
 public class MenuUtils {
 
@@ -32,6 +33,10 @@ public class MenuUtils {
 				return true;
 			case R.id.menu_bookmarks :
 				activity.startActivity(new Intent(activity, BookmarksActivity.class));
+				return true;
+			case R.id.menu_home:
+				activity.startActivity(new Intent(activity, BrEfDicActivity.class));
+				return true;
 			default:
 				return true;
 		}

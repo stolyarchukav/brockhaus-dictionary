@@ -12,6 +12,7 @@ import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -65,8 +66,9 @@ public class BrEfDicActivity extends Activity {
 			}
 		});
         
-        Button rateBtn = (Button) findViewById(R.id.rate_app);
+        Button rateBtn = findViewById(R.id.rate_app);
         rateBtn.setTypeface(font);
+		rateBtn.setPaintFlags(rateBtn.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         rateBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View paramView) {
@@ -79,8 +81,9 @@ public class BrEfDicActivity extends Activity {
 			}
 		});
         
-        Button moreAppsBtn = (Button) findViewById(R.id.moreAppsButton);
+        Button moreAppsBtn = findViewById(R.id.moreAppsButton);
         moreAppsBtn.setTypeface(font);
+		moreAppsBtn.setPaintFlags(rateBtn.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         moreAppsBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View paramView) {

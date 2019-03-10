@@ -9,8 +9,7 @@
     <string name="word_not_found">К сожалению, не найдено ни одного слова по запросу</string>
     <string name="search_string_empty">Необходимо задать текст для поиска</string>
     <string name="progress_title">Загрузка</string>
-    <string name="progress_text">Подождите, идет загрузка...</string>
-    <string name="goto_menu">Перейти в меню поиска</string>
+    <string name="progress_text">Подождите, идет загрузка…</string>
     <string name="rate_app"><u>Будем очень признательны за оставленные комментарии и оценки</u></string>
     <string name="error_search_try_again">Ошибка при поиске. Попробуйте повторить поиск</string>
     <string name="error_db_open">Ошибка при открытии базы данных. Попробуйте переустановить приложение</string>

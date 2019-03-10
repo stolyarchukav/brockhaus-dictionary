@@ -60,12 +60,5 @@
     	android:layout_margin="5px"
     	android:layout_weight="0.9"
     	android:visibility="gone" />
-    		
-    <Button android:id="@+id/word_goto_main"
-    	android:layout_width="fill_parent"
-    	android:layout_height="wrap_content"
-    	android:text="@string/goto_menu"
-    	android:layout_margin="5px"
-    	android:layout_marginTop="15px" />
     
 </LinearLayout>

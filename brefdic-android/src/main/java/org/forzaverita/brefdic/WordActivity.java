@@ -1,9 +1,7 @@
 package org.forzaverita.brefdic;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.AssetManager;
-import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -54,8 +52,7 @@ public class WordActivity extends Activity {
     }
 
 	private void configureActivity() {
-		boolean fromWidget = false;
-        Word word;
+		Word word;
         Bundle extras = getIntent().getExtras();
         if (extras != null && extras.containsKey(Constants.WORD_ID)) {
         	int wordId = (Integer) extras.get(Constants.WORD_ID);
@@ -75,11 +72,9 @@ public class WordActivity extends Activity {
         	}
         	else {
         		word = service.getCurrentWord();
-            	fromWidget = true;
         	}
         }
         configureWord(word);
-        configureGotoMain();
 	}
 
 	private void configureWord(Word word) {
@@ -202,20 +197,6 @@ public class WordActivity extends Activity {
         	text.loadDataWithBaseURL(FILE_ANDROID_ASSET + WORD_TEMPLATE_HTML, data,
         			"text/html", UTF_8, "about:blank");
         }
-	}
-
-	private void configureGotoMain() {
-		Button button = (Button) findViewById(R.id.word_goto_main);
-        button.setVisibility(View.VISIBLE);
-        button.setTypeface(service.getFont());
-        button.setTextColor(Color.BLACK);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(WordActivity.this, BrEfDicActivity.class);
-                startActivity(intent);
-            }
-        });
 	}
 	
 }

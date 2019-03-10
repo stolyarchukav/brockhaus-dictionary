@@ -40,15 +40,16 @@ public class BrEfDicActivity extends Activity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		setTitle(R.string.app_name_short);
         setContentView(R.layout.main);
         service = (AppService) getApplicationContext();
         
         Typeface font = service.getFont();
         
-        TextView title = (TextView) findViewById(R.id.title);
+        TextView title = findViewById(R.id.title);
         title.setTypeface(font);
         
-        Button browseBtn = (Button) findViewById(R.id.browse);
+        Button browseBtn = findViewById(R.id.browse);
         browseBtn.setTypeface(font);
         browseBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -57,7 +58,7 @@ public class BrEfDicActivity extends Activity {
 			}
 		});
         
-        Button searchBtn = (Button) findViewById(R.id.search);
+        Button searchBtn = findViewById(R.id.search);
         searchBtn.setTypeface(font);
         searchBtn.setOnClickListener(new View.OnClickListener() {
 			@Override

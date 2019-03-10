@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Brockhaus and Efron Encyclopedia</string>
+    <string name="app_name_short">Encyclopedia</string>
     <string name="title">Brockhaus and Efron Encyclopedic Dictionary</string>
     <string name="browse">By alphabet</string>
     <string name="search">Search</string>
@@ -51,5 +52,4 @@
     <string name="bookmarks_empty">Bookmarks list is empty</string>
     <string name="word_previous">Previous</string>
     <string name="word_next">Next</string>
-    <string name="menu_main_page">Main page</string>
 </resources>

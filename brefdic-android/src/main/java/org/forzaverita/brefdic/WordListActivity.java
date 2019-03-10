@@ -173,6 +173,7 @@ private static final int MARGIN = 5;
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		setTitle(R.string.app_name_short);
         setContentView(R.layout.wordlist);
         service = (AppService) getApplicationContext();
         

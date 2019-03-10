@@ -55,9 +55,6 @@ public class MenuUtils {
 			case R.id.menu_bookmarks :
 				activity.startActivity(new Intent(activity, BookmarksActivity.class));
 				return true;
-			case R.id.menu_home:
-				activity.startActivity(new Intent(activity, BrEfDicActivity.class));
-				return true;
 			default:
 				return true;
 		}

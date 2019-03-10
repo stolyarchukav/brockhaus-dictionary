@@ -47,6 +47,7 @@ public class WordActivity extends Activity {
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+		setTitle(R.string.app_name_short);
         setContentView(R.layout.word);
         service = (AppService) getApplicationContext();
         configureActivity();

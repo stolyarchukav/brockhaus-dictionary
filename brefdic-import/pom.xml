@@ -11,7 +11,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<version.java>1.6</version.java>
 		<version.scala>2.9.2</version.scala>
-		<version.spring>3.1.1.RELEASE</version.spring>
+		<version.spring>3.2.9.RELEASE</version.spring>
 		<version.slf4j>1.6.6</version.slf4j>
 		<version.logback>1.0.3</version.logback>
 		<version.postgresql>9.1-901-1.jdbc4</version.postgresql>
